@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 txtCity.setText(weatherResult.getName());
                 txtDate.setText(new SimpleDateFormat("EEEE dd MMMM yyyy").format(Calendar.getInstance().getTime()));
                 txtWind.setText(Long.toString(Math.round(weatherResult.getWind().getSpeed() * 100)) + " m/s");
-                txtMaximum.setText(Long.toString(Math.round(weatherResult.getMain().getTempMax())));
+                txtMaximum.setText(Long.toString(Math.round(weatherResult.getMain().getTempMax()))+" °C");
                 txtSummary.setText(weatherResult.getWeather().get(0).getMain());
 
 
